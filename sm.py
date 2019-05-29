@@ -6,9 +6,10 @@ import ast
 import os
 from threading import Thread
 
-SV = os.environ.get('SV')
+
 
 def anyx():
+    SV = os.environ.get('SV')
     di = {'16': .55,
           '15': .03,
           '5': .42,
@@ -51,6 +52,7 @@ def anyx():
 
 
 def minnow():
+    SV = os.environ.get('SV')
     di = {'16': .55,
           '15': .03,
           '5': .42,
@@ -93,6 +95,7 @@ def minnow():
 
 
 def stee():
+    SV = os.environ.get('SV')
     di = {'16': .55,
           '15': .03,
           '5': .42,
@@ -135,6 +138,7 @@ def stee():
 
 
 def use():
+    SV = os.environ.get('SV')
     di = di = {'16': .55,
           '15': .03,
           '5': .42,
