@@ -120,4 +120,4 @@ for detail in bo.stream(['custom_json']):
                             content='<@397972596207124480> Dev time: {}'.format(time))
                         webhook.execute()
     except Exception as e:
-        print("Error found: {}".format(e)
+        print("Error found: {}".format(e))
