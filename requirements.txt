@@ -1,1 +1,2 @@
 beem==0.20.21
+discord-webhook==0.4.1
