@@ -89,7 +89,7 @@ dic = {'16': .7,
 
 EF = os.environ.get('EF')
 
-stm = Steem(node="https://api.steemitdev.com/", keys=EF)
+stm = Steem(node="https://api.steem.house", keys=EF)
 acc = Account('eftikhan', steem_instance=stm)
 bo = Blockchain(stm,'head')
 
@@ -109,7 +109,7 @@ for detail in bo.stream(['custom_json']):
                         time = datetime.now()
                         webhook = DiscordWebhook(
                             url='https://discordapp.com/api/webhooks/582590527103434765/sAT1ZNhY8ZfmzN0uqnzCMMTfJghjH4y1DAatfIEXo4NrOj8zbFQ0XhXOlNTiR_B6Hc-x',
-                            content='<@397972596207124480> dev time: {}'.format(time))
+                            content='<@397972596207124480> house time: {}'.format(time))
                         webhook.execute()
 
                     elif int(ii['edition']) == 0 and price <= dic[idd]:
@@ -117,7 +117,7 @@ for detail in bo.stream(['custom_json']):
                         time = datetime.now()
                         webhook = DiscordWebhook(
                             url='https://discordapp.com/api/webhooks/582590527103434765/sAT1ZNhY8ZfmzN0uqnzCMMTfJghjH4y1DAatfIEXo4NrOj8zbFQ0XhXOlNTiR_B6Hc-x',
-                            content='<@397972596207124480> Dev time: {}'.format(time))
+                            content='<@397972596207124480> house time: {}'.format(time))
                         webhook.execute()
     except Exception as e:
         print("Error found: {}".format(e))
